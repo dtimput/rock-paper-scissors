@@ -1,0 +1,15 @@
+html{
+    background-color: black;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.playerOptions{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}

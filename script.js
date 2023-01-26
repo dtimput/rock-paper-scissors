@@ -65,8 +65,7 @@ function playRound(playerChoice, computerChoice){
 
 function game(){
     for (let i = 0; i < 50; i++) {
-        if(playerScore + computerScore < 5){
-            const yourChoice = prompt("Choose Rock Paper or Scissors!").toLowerCase();
+            //const yourChoice = prompt("Choose Rock Paper or Scissors!").toLowerCase();
             const computerChoice = getComputerChoice();
 
             console.log('Your choice: ', yourChoice);  
@@ -75,9 +74,7 @@ function game(){
 
             console.log('Your score: ', playerScore);
             console.log('Computers score: ', computerScore);
-        }else{
-            break;
-        }
+        
 
     }
 }
