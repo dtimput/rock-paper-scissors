@@ -13,3 +13,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.scoreboard{
+    text-align: center;
+    background-color: white;
+    margin: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px;
+}
