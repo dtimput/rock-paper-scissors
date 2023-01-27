@@ -23,7 +23,7 @@ function selection(e){
 }
 
 function updateScoreBoard(){
-    //if(playerScore <= 5 && computerChoice <=5){
+    if(playerScore < 5 && computerScore < 5){
     document.querySelector(".playerSelection").textContent = `Player Selection: ${playerChoice}`;
     computerChoice = getComputerChoice();
     document.querySelector(".computerSelection").textContent = `Computer  Selection: ${computerChoice}`;
@@ -31,7 +31,12 @@ function updateScoreBoard(){
     document.querySelector(".gameStatus").textContent = status;
     document.querySelector(".playerScore").textContent = `Player Score: ${playerScore}`;
     document.querySelector(".computerScore").textContent = `Computer Score: ${computerScore}`;
-    //}
+    } 
+    if(playerScore == 5){
+        document.querySelector(".gameStatus").textContent = 'Game over! You win first to five!';
+    }else if(computerScore == 5){
+        document.querySelector(".gameStatus").textContent = 'Game over! You lose first to five!';
+    }
 }   
 
 function getComputerChoice(){
